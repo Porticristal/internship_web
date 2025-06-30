@@ -8,18 +8,30 @@
 </head>
 <body>
   <div class="login-box">
-    <h2>ShopBox Login</h2>
+    <div class="login-title">
+      <span class="shopbox">ShopBox</span>
+      <span class="login">Login</span>
+    </div>
+
     <form action="/login" method="POST">
-      <input type="text" placeholder="Email or Name" required />
-      <input type="password" placeholder="Password" required />
-      <select>
+      <label for="user">User</label>
+      <input type="text" id="user" name="username" placeholder="Email or Name" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Password" required />
+
+      <label for="location">Location</label>
+      <select id="location" name="location">
         <option>(None)</option>
-        <!-- Add more options here -->
+        <!-- Add more location options here -->
       </select>
+
       <a href="#">Forgot your password?</a>
-      <label>
-        <input type="checkbox" /> Keep me logged in
+
+      <label class="remember">
+        <input type="checkbox" name="remember" /> Keep me logged in
       </label>
+
       <button type="submit">Sign In</button>
     </form>
   </div>
