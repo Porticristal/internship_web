@@ -3,7 +3,7 @@
 body {
   margin: 0;
   height: 100vh;
-  background: url('background.jpg') no-repeat center center/cover; /* Replace with your image path */
+  background: url('background.jpg') no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,32 +13,33 @@ body {
 .login-box {
   background: rgba(255, 255, 255, 0.95);
   border-radius: 20px;
-  padding: 30px 25px;
-  width: 320px;
+  padding: 40px 60px;
+  width: 600px; /* Wider rectangle */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .login-box h2 {
-  margin: 0 0 20px;
+  margin: 0 0 25px;
   color: #333;
+  text-align: center;
 }
 
 .login-box input[type="text"],
 .login-box input[type="password"],
 .login-box select {
   width: 100%;
-  padding: 12px 10px;
-  margin: 10px 0;
+  padding: 14px 12px;
+  margin: 12px 0;
   border: 1px solid #ccc;
   border-radius: 12px;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .login-box label {
   font-size: 14px;
   display: flex;
   align-items: center;
-  margin: 10px 0;
+  margin: 15px 0 10px;
 }
 
 .login-box label input[type="checkbox"] {
@@ -50,21 +51,25 @@ body {
   text-align: right;
   color: #6c63ff;
   text-decoration: none;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: 13px;
 }
 
 .login-box button {
-  width: 100%;
+  width: 150px; /* Smaller button */
   background-color: #6c63ff;
   color: white;
-  padding: 12px;
+  padding: 10px;
   border: none;
   border-radius: 12px;
-  font-size: 16px;
+  font-size: 15px;
   cursor: pointer;
+  display: block;
+  margin: 20px auto 0 auto;
+  transition: background-color 0.3s ease;
 }
 
 .login-box button:hover {
   background-color: #5a55d8;
 }
+ 
